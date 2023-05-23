@@ -58,7 +58,16 @@
 .logo-img {
   width: 179px;
 }
-
+.burger {
+  cursor: pointer;
+  display: none;
+}
+.b1, .b2, .b3 {
+  margin: 5px 0;
+  width: 23px;
+  height: 3px;
+  background-color: #ffffff;
+}
 .menu-list {
   display: flex;
   text-align: center;
@@ -138,10 +147,7 @@ h1 {
   position: relative;
 }
 
-.text-first,
-.text-two,
-.text-three,
-.text-four {
+.text-article_trend {
   display: flex;
   position: relative;
   background-repeat: no-repeat;
@@ -150,10 +156,7 @@ h1 {
   width: 25%;
 }
 
-.text-first::after,
-.text-two::after,
-.text-three::after,
-.text-four::after {
+.text-article_trend::after {
   content: "";
   position: absolute;
   top: 0;
@@ -173,27 +176,27 @@ h1 {
   width: 100%;
 }
 
-.text-first {
+.fon_one {
   background-image: url("../images/trend1.jpg");
   min-height: 310px;
 }
 
-.text-two {
+.fon_two {
   background-image: url("../images/trend2.jpg");
   min-height: 310px;
 }
 
-.text-three {
+.fon_three {
   background-image: url("../images/trend3.jpg");
   min-height: 310px;
 }
 
-.text-four {
+.fon_four {
   background-image: url("../images/trend4.jpg");
   min-height: 310px;
 }
 
-.first {
+.category {
   display: flex;
   justify-content: start;
   list-style-type: none;
@@ -219,15 +222,21 @@ h1 {
   text-align: center;
 }
 
-.Paragraph-trend {
+.paragraph-trend {
+  z-index: 1;
+  position: relative;
+}
+
+.link-trend {
+  text-decoration: none;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
   color: white;
   font-weight: bold;
-  z-index: 1;
-  position: relative;
-
+}
+.link-trend:hover {
+  color: #b59f5b;
 }
 
 /*main________________________________*/
@@ -249,7 +258,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-.first {
+.main-category {
   display: flex;
   justify-content: start;
   list-style-type: none;
@@ -261,7 +270,7 @@ h1 {
   width: 100%;
   margin-right: 30px;
   background-color: #eff6f1;
-  max-height: 290px;
+  height: 290px;
 }
 
 .photo:before {
@@ -320,7 +329,7 @@ span {
   margin-bottom: 15px;
 }
 
-.word {
+.article_text {
   width: 367px;
   font-size: 15px;
   line-height: 22px;
@@ -645,6 +654,7 @@ span {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
+  min-height: 267px;
 }
 
 .title-goods {
@@ -675,7 +685,7 @@ span {
   width: 347px;
   background-color: rgba(0, 0, 0, 0);
   border: 3px solid #b59f5b;
-  height: 267px;
+  flex-grow: 1;
 }
 
 .header-goods {
@@ -888,6 +898,12 @@ span {
   border: none;
   margin-left: 25px;
 }
+.field_popup:focus,
+.field_popup_two:focus {
+  border: 1px solid #b59f5b;
+  outline: 0;
+  background-color: #f4f7f6;
+}
 
 .field_popup::placeholder {
   opacity: 0.541;
@@ -898,10 +914,11 @@ span {
 
 .field_popup_two {
   width: 330px;
-  min-height: 48px;
-  background-color: #f4f7f6;
+  min-height: 131px;
   border: none;
   margin-top: 10px;
+  margin-left: 25px;
+  background-color: #f4f7f6;
 }
 
 .field_popup_two::placeholder {
@@ -910,13 +927,6 @@ span {
   color: #000000;
   transform: translateY(-40px);
   padding-left: 15px;
-}
-
-.field_popup_two {
-  width: 330px;
-  min-height: 131px;
-  background-color: #f4f7f6;
-  border: none;
 }
 
 .svg_strelka {
@@ -955,4 +965,106 @@ span {
   height: 48px;
   background-color: #323232;
   cursor: pointer;
+}
+
+/* @media tablet */
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+  .trend-article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .text-article_trend {
+    width: 49.6%;
+  }
+
+  .all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: 25px;
+  }
+
+  .text-goods {
+    width: 44%;
+    margin: 20px;
+  }
+
+  .news-first {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .base {
+    width: 100%;
+  }
+
+  .information {
+    margin-left: -130px;
+  }
+
+  .main-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+
+  .box-footer {
+    width: 90%;
+  }
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .photo {
+    max-width: 290px;
+  }
+}
+@media (min-height: 641px) and (max-height: 1200px) and (orientation: landscape)  {
+  .trend-article {
+    max-height: 100vh;
+  }
+  .text-article_trend {
+    max-height: calc((100vw-3px)/2);
+  }
+  .news-first {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .photo {
+    max-width: 290px;
+  }
+  .box-footer {
+    width: 90%;
+  }
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: 25px;
+  }
+  .text-goods {
+    width: 44%;
+    margin: 20px;
+  }
+  .base {
+    width: 100%;
+  }
+  .information {
+    margin-left: -130px;
+  }
+  .main-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
 }
