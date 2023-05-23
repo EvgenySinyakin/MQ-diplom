@@ -265,12 +265,16 @@ h1 {
   flex-wrap: wrap;
 }
 
+.main-text {
+  padding-left: 20px;
+}
 .photo {
   position: relative;
   width: 100%;
   margin-right: 30px;
   background-color: #eff6f1;
   height: 290px;
+  margin-right: 50px;
 }
 
 .photo:before {
@@ -1060,11 +1064,13 @@ span {
     width: 100%;
   }
   .information {
-    margin-left: -130px;
+    margin-left: -200px;
+    max-width: 300px;
   }
   .main-text {
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 400px;
+    padding-left: 100px;
   }
 }
