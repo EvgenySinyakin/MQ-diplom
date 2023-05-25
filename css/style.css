@@ -59,20 +59,26 @@
 .logo-img {
   width: 179px;
 }
+
 .burger {
   cursor: pointer;
   display: none;
 }
-.b1, .b2, .b3 {
+
+.b1,
+.b2,
+.b3 {
   margin: 5px 0;
   width: 23px;
   height: 3px;
   background-color: #ffffff;
 }
+
 .menu-list {
   display: flex;
   text-align: center;
 }
+
 .menu-item {
   margin-left: 20px;
   list-style-type: none;
@@ -235,6 +241,7 @@ h1 {
   color: white;
   font-weight: bold;
 }
+
 .link-trend:hover {
   color: #b59f5b;
 }
@@ -243,7 +250,7 @@ h1 {
 .base {
   margin: 65px auto;
   max-width: 1220px;
-  padding: 0 15px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   gap: 45px;
@@ -273,12 +280,14 @@ h1 {
   content: "";
   padding-bottom: 100%;
 }
+
 .kartinka {
   width: auto;
   display: block;
   object-fit: cover;
   aspect-ratio: 4/3;
 }
+
 .tag-link {
   margin-right: 20px;
   text-decoration: none;
@@ -340,9 +349,7 @@ span {
 .paragraph {
   margin-bottom: 18px;
 }
-.main-text{
-  padding-left: 30px;
-}
+
 /*aside_____________________________*/
 
 .information {
@@ -649,10 +656,11 @@ span {
   max-width: 1170px;
   margin: 0 auto;
 }
+
 .all {
   display: flex;
   justify-content: space-between;
-}  
+}
 
 .text-goods {
   display: flex;
@@ -686,7 +694,6 @@ span {
 .description {
   position: relative;
   bottom: 40px;
-  width: 347px;
   background-color: rgba(0, 0, 0, 0);
   border: 3px solid #b59f5b;
   flex-grow: 1;
@@ -900,6 +907,7 @@ span {
   border: none;
   margin-left: 25px;
 }
+
 .field_popup:focus,
 .field_popup_two:focus {
   border: 1px solid #b59f5b;
@@ -1011,117 +1019,163 @@ span {
   .box-footer {
     width: 90%;
   }
+
   .menu {
     display: none;
   }
+
   .burger {
     display: block;
   }
-  .photo {
+
+  .kartinka {
     width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+  }
+
+  .photo {
+    max-width: 100%;
+  }
+
+  .photo-goods {
+    width: 90%;
   }
 }
-@media (min-height: 641px) and (max-height: 1199px) and (orientation: landscape)  {
+
+@media (min-height: 641px) and (max-height: 1199px) and (orientation: landscape) {
   .trend-article {
-    max-height: 100vh;
+    max-height: 100%;
   }
+
   .text-article_trend {
     max-height: calc((100vw-3px)/2);
   }
+
   .news-first {
     display: flex;
     flex-wrap: wrap;
   }
+
   .box-footer {
     width: 90%;
   }
+
   .menu {
     display: none;
   }
+
   .burger {
     display: block;
   }
+
   .news {
     padding: 35px;
   }
+
   .all {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     margin-left: 25px;
   }
+
   .text-goods {
     width: 44%;
     margin: 20px;
   }
+
   .base {
     width: 100%;
   }
+
   .main-text {
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 100px;
   }
+
   .photo {
+    max-width: 100%;
+  }
+
+  .kartinka {
     width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4/3;
   }
-}
-@media (max-width: 640px) and (orientation: portrait) {
-  .trend-article {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .text-article_trend {
-    width: 49%;
-  }
-  .all {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    margin-left: 25px;
-  }
-  .text-goods {
-    width: 44%;
-    margin: 20px;
-  }
-  .news-first {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 290px;
-  }
-  .base {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .news {
-    margin-left: 120px;
-  }
-.information {
-  display: flex;
-  flex-direction: column;
-}
-.article-data {
-  max-width: 300px;
-}
-.tag-menu-list {
-  max-width: 300px;
-}
-  .main-text {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .box-footer {
+
+  .photo-goods {
     width: 90%;
   }
-  .menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-  }
-  .photo {
-    width: 100%;
-  }
 }
+
+  @media (max-width: 640px) and (orientation: portrait) {
+    .trend-article {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .text-article_trend {
+      width: 49%;
+    }
+
+    .all {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      margin-left: 25px;
+    }
+
+    .text-goods {
+      width: 44%;
+      margin: 20px;
+    }
+
+    .news-first {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 290px;
+    }
+
+    .base {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .information {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .box-footer {
+      width: 90%;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .burger {
+      display: block;
+    }
+
+    .photo {
+      max-width: 100%;
+    }
+    
+    .kartinka {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+  }
