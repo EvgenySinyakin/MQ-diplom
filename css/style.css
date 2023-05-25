@@ -274,7 +274,7 @@ h1 {
   padding-bottom: 100%;
 }
 .kartinka {
-  width: 100%;
+  width: auto;
   display: block;
   object-fit: cover;
   aspect-ratio: 4/3;
@@ -345,7 +345,7 @@ span {
 }
 /*aside_____________________________*/
 
-.infotmation {
+.information {
   max-width: 270px;
 }
 
@@ -645,19 +645,21 @@ span {
 
 
 /*aside изделия*/
+.goods {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .all {
   display: flex;
   justify-content: space-between;
-  width: 100vh;
-  margin-left: auto;
-  margin-right: auto;
 }  
 
 .text-goods {
   display: flex;
   flex-direction: column;
   min-height: 267px;
-  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
 }
 
 .title-goods {
@@ -683,7 +685,6 @@ span {
 
 .description {
   position: relative;
-  right: 27px;
   bottom: 40px;
   width: 347px;
   background-color: rgba(0, 0, 0, 0);
@@ -1016,6 +1017,9 @@ span {
   .burger {
     display: block;
   }
+  .photo {
+    width: 100%;
+  }
 }
 @media (min-height: 641px) and (max-height: 1199px) and (orientation: landscape)  {
   .trend-article {
@@ -1037,6 +1041,9 @@ span {
   .burger {
     display: block;
   }
+  .news {
+    padding: 35px;
+  }
   .all {
     display: flex;
     flex-wrap: wrap;
@@ -1050,13 +1057,13 @@ span {
   .base {
     width: 100%;
   }
-  .information {
-    max-width: 300px;
-  }
   .main-text {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 100px;
+  }
+  .photo {
+    width: 100%;
   }
 }
 @media (max-width: 640px) and (orientation: portrait) {
@@ -1114,5 +1121,7 @@ span {
   .burger {
     display: block;
   }
-
+  .photo {
+    width: 100%;
+  }
 }
