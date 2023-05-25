@@ -249,11 +249,6 @@ h1 {
   gap: 45px;
 }
 
-.news {
-  max-width: 775px;
-  margin-right: 120px;
-}
-
 .news-first {
   display: flex;
   margin-bottom: 20px;
@@ -267,12 +262,10 @@ h1 {
   flex-wrap: wrap;
 }
 
-.main-text {
-  padding-left: 20px;
-}
 .photo {
   position: relative;
   width: 100%;
+  max-width: 380px;
   background-color: #eff6f1;
 }
 
@@ -338,7 +331,6 @@ span {
 }
 
 .article_text {
-  max-width: 367px;
   font-size: 15px;
   line-height: 22px;
   color: #0f0d0e;
@@ -348,11 +340,13 @@ span {
 .paragraph {
   margin-bottom: 18px;
 }
-
+.main-text{
+  padding-left: 30px;
+}
 /*aside_____________________________*/
 
 .infotmation {
-  max-width: 272px;
+  max-width: 270px;
 }
 
 .aside-block {
@@ -654,15 +648,16 @@ span {
 .all {
   display: flex;
   justify-content: space-between;
-  margin: 20px auto;
-  max-width: 1220px;
-}
+  width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}  
 
 .text-goods {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
   min-height: 267px;
+  flex-wrap: nowrap;
 }
 
 .title-goods {
@@ -975,7 +970,7 @@ span {
 
 /* @media tablet */
 
-@media (min-width: 641px) and (max-width: 1999px) and (orientation: portrait) {
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
   .trend-article {
     display: flex;
     flex-wrap: wrap;
@@ -1006,9 +1001,6 @@ span {
     width: 100%;
   }
 
-  .information {
-    margin-left: -130px;
-  }
 
   .main-text {
     margin-top: 20px;
@@ -1036,9 +1028,6 @@ span {
     display: flex;
     flex-wrap: wrap;
   }
-  .photo {
-    max-width: 290px;
-  }
   .box-footer {
     width: 90%;
   }
@@ -1062,7 +1051,6 @@ span {
     width: 100%;
   }
   .information {
-    margin-left: -200px;
     max-width: 300px;
   }
   .main-text {
@@ -1105,8 +1093,6 @@ span {
   }
 .information {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   flex-direction: column;
 }
 .article-data {
