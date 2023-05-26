@@ -260,6 +260,7 @@ h1 {
   display: flex;
   margin-bottom: 20px;
   max-width: 780px;
+  gap: 25px;
 }
 
 .main-category {
@@ -349,7 +350,6 @@ span {
 .paragraph {
   margin-bottom: 18px;
 }
-
 /*aside_____________________________*/
 
 .information {
@@ -668,6 +668,7 @@ span {
   min-height: 267px;
   justify-content: start;
   align-items: center;
+  max-width: 345px;
 }
 
 .title-goods {
@@ -992,15 +993,18 @@ span {
   .all {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
-    margin-left: 25px;
+    align-items: center;
+justify-content: center;
   }
 
   .text-goods {
     width: 44%;
     margin: 20px;
+    
   }
-
+.description {
+  flex-grow: 1;
+}
   .news-first {
     display: flex;
     flex-wrap: wrap;
@@ -1032,15 +1036,11 @@ span {
     width: 100%;
     display: block;
     object-fit: cover;
-    aspect-ratio: 4/3;
-  }
-
-  .photo {
-    max-width: 100%;
+    align-content: center;
   }
 
   .photo-goods {
-    width: 90%;
+    max-width: 97%;
   }
 }
 
@@ -1077,7 +1077,8 @@ span {
   .all {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    align-items: center;
+justify-content: center;
     margin-left: 25px;
   }
 
@@ -1085,7 +1086,6 @@ span {
     width: 44%;
     margin: 20px;
   }
-
   .base {
     width: 100%;
   }
@@ -1107,7 +1107,7 @@ span {
   }
 
   .photo-goods {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -1115,21 +1115,22 @@ span {
     .trend-article {
       display: flex;
       flex-wrap: wrap;
+      max-width: 100%;
     }
 
     .text-article_trend {
-      width: 49%;
+      display: flex;
+      width: 100%;
     }
 
     .all {
       display: flex;
       flex-wrap: wrap;
-      justify-content: start;
-      margin-left: 25px;
+      align-items: center;
+      justify-content: center;
     }
 
     .text-goods {
-      width: 44%;
       margin: 20px;
     }
 
@@ -1140,7 +1141,7 @@ span {
     }
 
     .base {
-      width: 100%;
+      max-width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -1172,6 +1173,62 @@ span {
       max-width: 100%;
     }
     
+    .kartinka {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+  }
+
+  @media (max-height: 640px) and (orientation: landscape) {
+    .trend-article {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .text-article_trend {
+      width: 49%;
+    }
+    .all {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+justify-content: center;
+    }
+    .text-goods {
+      margin: 20px;
+    }
+    .news-first {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 290px;
+    }
+    .base {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .information {
+      display: flex;
+      flex-direction: column;
+    }
+    .main-text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .box-footer {
+      width: 90%;
+    }
+    .menu {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+    .photo {
+      max-width: 100%;
+        
     .kartinka {
       width: 100%;
       display: block;
