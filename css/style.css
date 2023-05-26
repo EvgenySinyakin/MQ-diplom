@@ -698,6 +698,7 @@ span {
   background-color: rgba(0, 0, 0, 0);
   border: 3px solid #b59f5b;
   flex-grow: 1;
+  padding-right: 20px;
 }
 
 .header-goods {
@@ -998,7 +999,7 @@ justify-content: center;
   }
 
   .text-goods {
-    width: 44%;
+    width: 100%;
     margin: 20px;
     
   }
@@ -1083,7 +1084,7 @@ justify-content: center;
   }
 
   .text-goods {
-    width: 44%;
+    max-width: 100%;
     margin: 20px;
   }
   .base {
@@ -1228,7 +1229,7 @@ justify-content: center;
     }
     .photo {
       max-width: 100%;
-        
+    }   
     .kartinka {
       width: 100%;
       display: block;
