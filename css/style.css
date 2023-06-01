@@ -264,7 +264,7 @@ h1 {
 .news-first {
   display: flex;
   margin-bottom: 20px;
-  max-width: 780px;
+  max-width: 785px;
   gap: 25px;
 }
 
@@ -278,7 +278,7 @@ h1 {
 .photo {
   position: relative;
   width: 100%;
-  max-width: 380px;
+  max-width: 385px;
   background-color: #eff6f1;
 }
 
@@ -359,7 +359,7 @@ span {
 /*aside_____________________________*/
 
 .information {
-  max-width: 270px;
+  max-width: 272px;
 }
 
 .aside-block {
@@ -699,6 +699,7 @@ span {
 }
 
 .description {
+  max-width: 325px;
   position: relative;
   bottom: 40px;
   background-color: rgba(0, 0, 0, 0);
@@ -782,6 +783,9 @@ span {
 
 .btn-prize:nth-child(2) {
   bottom: 45px;
+}
+.photo-goods {
+  max-width: 295px;
 }
 
 /*footer__________________*/
@@ -1002,10 +1006,11 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
   }
 
   .text-goods {
-    width: 100%;
+    max-width: 300%;
     margin: 20px;
     align-self: stretch;
   }
@@ -1013,14 +1018,10 @@ span {
   .news-first {
     display: flex;
     flex-wrap: wrap;
+    max-width: 390px;
   }
 
-  .base {
-    width: 100%;
-  }
-
-
-  .main-text {
+ .main-text {
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -1038,7 +1039,7 @@ span {
   }
 
   .kartinka {
-    width: 100%;
+    max-width: 100%;
     display: block;
     object-fit: cover;
     align-content: center;
@@ -1049,18 +1050,19 @@ span {
   }
 }
 
-@media (min-height: 641px) and (max-height: 1199px) and (orientation: landscape) {
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
   .trend-article {
-    max-height: 100%;
+    max-width: 100%;
   }
 
   .text-article_trend {
-    max-height: calc((100vw-3px)/2);
+    max-width: calc((100vw-3px)/2);
   }
 
   .news-first {
     display: flex;
     flex-wrap: wrap;
+    max-width: 390px;
   }
 
   .box-footer {
@@ -1083,18 +1085,15 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 25px;
+    margin: 0 auto;
     align-items: flex-start;
+    max-width: 72%;
   }
 
   .text-goods {
     max-width: 100%;
     margin: 20px;
     align-self: stretchs;
-  }
-
-  .base {
-    width: 100%;
   }
 
   .main-text {
